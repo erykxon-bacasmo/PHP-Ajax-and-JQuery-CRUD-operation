@@ -9,13 +9,13 @@ if(mysqli_query($conn , $sql)){
         'success'=>true,
         'message'=>'Record deleted succesfully!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 }else{
     $response = [
         'status'=>'ok',
         'success'=>false,
         'message'=>'Record deleted failed!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 } 
 ?> 

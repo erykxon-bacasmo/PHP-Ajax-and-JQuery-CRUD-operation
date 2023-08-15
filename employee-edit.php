@@ -14,13 +14,13 @@ if(mysqli_query($conn , $sql)){
         'success'=>true,
         'message'=>'Record updated succesfully!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 }else{
     $response = [
         'status'=>'ok',
         'success'=>false,
         'message'=>'Record updated failed!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 } 
 ?>

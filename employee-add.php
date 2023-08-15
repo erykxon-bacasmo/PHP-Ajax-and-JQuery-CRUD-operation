@@ -13,13 +13,13 @@ if(mysqli_query($conn , $sql)){
         'success'=>true,
         'message'=>'Record created succesfully!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 }else{
     $response = [
         'status'=>'ok',
         'success'=>false,
         'message'=>'Record created failed!'
     ];
-    print_r(json_encode($response));
+    echo (json_encode($response));
 } 
 ?> 
